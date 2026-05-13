@@ -76,7 +76,7 @@ public class UMLhandler extends XMLadapter {
 
 	// ------------------------- WRITER -------------------------
 
-	public static void write(File file, String name, Collection<UMLobject> objs) {
+	public static void write(File file, String name, Collection<? extends UMLobject> objs) {
 		String out = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<database name=\"" + name + "\">\n";
 
 		out += "\t<tables>\n";
